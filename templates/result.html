@@ -5,9 +5,9 @@
 <h3>Results for Username @{{ username }}</h3>
 
 <div>
-    Negative (% of Tweets): {{ result.neg }}<br>
-    Positive (% of Tweets): {{ result.pos }}<br>
-    Neutral  (% of Tweets): {{ result.neut }}
+    Count of Negative Tweets : {{ result.neg }}<br>
+    Count of Positive Tweets : {{ result.pos }}<br>
+    Count of Neutral  Tweets : {{ result.neut }}
 
     <div class="ct-chart ct-perfect-fourth"></div>
 
@@ -29,26 +29,14 @@
 
     <script>
     var data = {
-      // A labels array that can contain any sort of values
       labels: ['Negative', 'Positive', 'Neutral'],
-      // Our series array that contains series objects or in this case series data arrays
       series: [
         {{ result.neg }}, {{ result.pos }}, {{ result.neut }}
       ]
     };
 
-
-
-
-    // Create a new line chart object where as first parameter we pass in a selector
-    // that is resolving to our chart container element. The Second parameter
-    // is the actual data object.
-    // new Chartist.Line('.ct-chart', data);
     var sum = function(a, b) { return a + b };
     new Chartist.Pie('.ct-chart', data, {
-    //   labelInterpolationFnc: function(value) {
-    //     return Math.round(value / data.series.reduce(sum) * 100) + '%';
-    //   }
     });
 
     </script>
