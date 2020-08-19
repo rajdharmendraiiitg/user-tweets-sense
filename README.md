@@ -12,7 +12,6 @@ Prerequisites:
  - Twython
  - Flask
  - NLTK
- - 
 
 Install libraries using `pip`
 
