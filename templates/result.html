@@ -5,23 +5,23 @@
 <h3>Results for Username @{{ username }}</h3>
 
 <div>
-    Negative: {{ result.neg }}<br>
-    Positive: {{ result.pos }}<br>
-    Neutral: {{ result.neut }}
+    Negative (% of Tweets): {{ result.neg }}<br>
+    Positive (% of Tweets): {{ result.pos }}<br>
+    Neutral  (% of Tweets): {{ result.neut }}
 
     <div class="ct-chart ct-perfect-fourth"></div>
 
-    <h4>Negative tweets</h4>
+    <h4 text-align: center >Negative tweets</h4>
     {% for tweet in result.negative_tweets %}
         <li>{{ tweet }}</li>
     {% endfor %}
 
-    <h4>Positive tweets</h4>
+    <h4 text-align: center >Positive tweets</h4>
     {% for tweet in result.positive_tweets %}
         <li>{{ tweet }}</li>
     {% endfor %}
 
-    <h4>Neutral tweets</h4>
+    <h4 text-align: center>Neutral tweets</h4>
     {% for tweet in result.neutral_tweets %}
         <li>{{ tweet }}</li>
     {% endfor %}
