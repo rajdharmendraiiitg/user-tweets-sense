@@ -80,7 +80,7 @@ def root():
 
     if request.method == "POST":
 
-        user_timeline = twitter.get_user_timeline(screen_name=request.form['twitter_username'], count = 100)
+        user_timeline = twitter.get_user_timeline(screen_name=request.form['twitter_username'], count = 500)
 
         return render_template("result.html", result=sentiment_analysis(user_timeline), username=request.form['twitter_username'])
     else:
