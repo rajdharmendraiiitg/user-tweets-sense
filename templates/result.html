@@ -11,17 +11,17 @@
 
     <div class="ct-chart ct-perfect-fourth"></div>
 
-    <h4 text-align: center >Negative tweets</h4>
+    <h4 style="text-align:center" >Negative tweets</h4>
     {% for tweet in result.negative_tweets %}
         <li>{{ tweet }}</li>
     {% endfor %}
 
-    <h4 text-align: center >Positive tweets</h4>
+    <h4 style="text-align:center" >Positive tweets</h4>
     {% for tweet in result.positive_tweets %}
         <li>{{ tweet }}</li>
     {% endfor %}
 
-    <h4 text-align: center>Neutral tweets</h4>
+    <h4 style="text-align:center">Neutral tweets</h4>
     {% for tweet in result.neutral_tweets %}
         <li>{{ tweet }}</li>
     {% endfor %}
