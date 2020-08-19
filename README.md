@@ -20,6 +20,8 @@ Install libraries using `pip`
 Run the application (defaults on port 5000) by executing:
 
     python main.py
+    
+    Link for the web application https://user-tweets-sense.herokuapp.com/
 
 ## Support
 
