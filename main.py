@@ -4,8 +4,8 @@ from twython import Twython
 import nltk
 from dictionary import Dictionary
 
-APP_KEY = 'kNkq6Bvv13hfzbsr5UkFpsueb'
-APP_SECRET = 'K5DCYsftMVIj0SO1dlGa1uQJb9g9QttoRqKmgzx75YsgXCqsap'
+APP_KEY = ''
+APP_SECRET = ''
 
 twitter = Twython(APP_KEY, APP_SECRET, oauth_version=2)
 ACCESS_TOKEN = twitter.obtain_access_token()
