@@ -1,6 +1,6 @@
 # Twitter Sentiment analysis for particular user
 
-This is a Python3 project that uses a Flask webserver to perform sentiment analysis on particular Twitter accounts.
+This is a Python based web application that uses a Flask webserver to perform sentiment analysis on particular user twitter account.
 
 In order to get this to work replace the APP_KEY(Consumer key) and APP_SECRET(Consumer secret key) variables in the main.py files with your credentials that you can get from https://apps.twitter.com
 
@@ -9,11 +9,12 @@ In order to get this to work replace the APP_KEY(Consumer key) and APP_SECRET(Co
 Prerequisites:
 
  - Python 3
- - Libs
-	 - Twython
-	 - Flask
+ - Twython
+ - Flask
+ - NLTK
+ - 
 
-Install libraries through `pip` command
+Install libraries using `pip`
 
 ## Usage
 
